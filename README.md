@@ -21,3 +21,7 @@ ToDo App List es una aplicación web para programar tareas. Permite la eliminaci
 
  La App se creo dentro de un entorno virtual de python para evitar que las librerias y dependencias  no intervinieran con las principales del Sistema operat
 
+
+## funcionamiento
+
+![ToDo App](Animation.gif)
