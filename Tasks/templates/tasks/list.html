@@ -6,17 +6,20 @@
     <title>My To Do list App</title>
 </head>
 <body>
-    <form method="POST" action="{% url "index" %}">
+    <form method="PUT" action="{% url "index" %}">
         {% csrf_token %}
         {{form.title}}
         <input type="submit" value="do task">
     </form>
 
-    <h3> tasks to do:</h3>
-    {% for i in tasks%}
-    <ul>
-        <li>{{i}}</li>
-    </ul>
+    <div>
+        <h3> tasks to do:</h3>
+        {% for i in tasks%}
+        <a href="{% url 'update' i.id %}"> Update</a>
+        <ul>
+            <li>{{i}}</li>
+        </ul>
+    </div>
     {% endfor %}
 </body>
 </html>

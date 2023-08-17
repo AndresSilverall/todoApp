@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Tasks</title>
+</head>
+<body>
+    <h3> Update Task</h3>
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{form}}
+        
+        <input type="submit" value="update task">
+    </form>
+
+</body>
+</html>
