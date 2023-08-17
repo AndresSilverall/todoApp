@@ -67,8 +67,13 @@
 		border-color: #e59400;
 	}
 
+    .main-title {
+        font-size: 35px ;
+        color: #fff;
+    }
+
 </style>
-    <h3><center>toDo a Task list</center> </h3>
+    <h3 class="main-title"><center>ToDo App</center> </h3>
     <div class="center-column">
     <form method="POST" action="{% url "index" %}">
         {% csrf_token %}
@@ -89,7 +94,7 @@
         <ul>    
             <li>{{i}}</li>
             <br>
-            <li>ctreated at: {{time}}</li>
+            <li>ctreated at: {{i.created_at }}</li>
         </ul>
         {% endif %}
         
