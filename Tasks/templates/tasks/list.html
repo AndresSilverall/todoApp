@@ -12,8 +12,17 @@
 <style>
 
 	body{
-		background-color: #638CB8;
+		background: #cc2b5e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Times New Roman', Times, serif;
+    
+
 	}
+
+    div ul li {
+        font-size: 20px;
+    }
 
 	input{
 		width: 100%;
@@ -39,8 +48,12 @@
 		box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
 	}
 
+    .todo-list div ul li {
+        list-style-type: none;
+    }
+
 	.item-row{
-		background-color: #906abd;
+		background-color: #5c2c97;
 		margin: 10px;
 		padding: 20px;
 		border-radius: 3px;
@@ -55,8 +68,9 @@
 	}
 
 </style>
+    <h3><center>toDo a Task list</center> </h3>
     <div class="center-column">
-    <form method="POST" action="/">
+    <form method="POST" action="{% url "index" %}">
         {% csrf_token %}
         {{form.title}}
         <input class="btn btn-info" type="submit" value="Program task">
@@ -72,8 +86,10 @@
         {% if i.complete == True %}
         <strike>{{i}}</strike>
         {% else %}
-        <ul>
+        <ul>    
             <li>{{i}}</li>
+            <br>
+            <li>ctreated at: {{time}}</li>
         </ul>
         {% endif %}
         

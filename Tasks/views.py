@@ -2,9 +2,11 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from . models import Task
 from. forms import TaskForm
+import datetime
 
 # Create your views here.
 def index(request):
+    created = Task.created_at
     task = Task.objects.all()
     form = TaskForm()
 
@@ -15,12 +17,14 @@ def index(request):
         return redirect("index")
     context = {
         "tasks": task,
-        "form": form
+        "form": form,
+        "time": created
     }
     return render(request, "tasks/list.html", context=context)
 
 
 def update_task(request, pk: str):
+    created_at = datetime.datetime.now()
     task = Task.objects.get(id=pk)
     form = TaskForm(instance=task)
 
@@ -32,7 +36,8 @@ def update_task(request, pk: str):
 
     context = {
         "update": task,
-        "form": form
+        "form": form,
+        "time": created_at
     }
     return render(request, "tasks/update_tasks.html", context=context)
 
