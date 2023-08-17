@@ -12,7 +12,7 @@ def index(request):
         form = TaskForm(request.POST)
         if form.is_valid():
             form.save()
-        return redirect("/")
+        return redirect("index")
     context = {
         "tasks": task,
         "form": form
