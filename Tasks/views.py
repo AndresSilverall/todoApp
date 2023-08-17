@@ -28,10 +28,20 @@ def update_task(request, pk: str):
         form = TaskForm(request.POST, instance=task)
         if form.is_valid():
             form.save()
-        return redirect("/")
+        return redirect("index")
 
     context = {
         "update": task,
         "form": form
     }
     return render(request, "tasks/update_tasks.html", context=context)
+
+
+def delete_task(request, pk):
+    item = Task.objects.get(id=pk)
+    if request.method == "POST":
+        item.delete()
+        return redirect("index")
+    
+    context = {"item": item }
+    return render(request, "tasks/delete_item.html", context=context)

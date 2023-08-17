@@ -15,7 +15,8 @@
     <div>
         <h3> tasks to do:</h3>
         {% for i in tasks%}
-        <a href="{% url 'update' i.id %}"> Update</a>
+        <a href="{% url 'update' i.id %}"> Update </a>
+        <a href="{% url 'delete' i.id %}"> Delete </a>
         <ul>
             <li>{{i}}</li>
         </ul>
