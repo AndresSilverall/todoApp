@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>tasks</h3>
+    <h3> tasks to do:</h3>
+    {% for i in tasks%}
+    <ul>
+        <li>{{i}}</li>
+    </ul>
+    {% endfor %}
 </body>
 </html>
