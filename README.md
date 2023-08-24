@@ -1,7 +1,5 @@
 # ToDo App List
-
 ToDo App List es una aplicación web para programar tareas, permite listar, eliminar y actualizar dichas tareas.
-
 ## Tecnologías usadas
 
  ● Python versión 3.8.5
@@ -13,9 +11,7 @@ ToDo App List es una aplicación web para programar tareas, permite listar, elim
  ● SQLite
 
  ## Configuraciones
-
  La App se creo dentro de un entorno virtual de python para evitar que las librerias y dependencias  no intervinieran con las principales del Sistema operativo.
- 
 ## Instalación
 1. Clona este repositorio: `https://github.com/AndresSilverall/todoApp.git`
 2. Navega a la carpeta del proyecto: `cd mi-proyecto`
@@ -30,10 +26,8 @@ ToDo App List es una aplicación web para programar tareas, permite listar, elim
 2. Abre tu navegador y ve a: `http://127.0.0.1:8000/`
    
 ## funcionamiento
-
 <img src="Animation.gif" alt="App en ejecucion" width="700" height="500">
 
 <img src="Finished.gif" alt="Tarea finalizada" width="700" height="500">
 
 
-![task finished](Finished.gif  width="500" height="500")
