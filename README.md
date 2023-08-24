@@ -38,7 +38,7 @@ ToDo App List es una aplicación web para programar tareas, permite listar, elim
 
 ## funcionamiento
 
-![ToDo App](AnimationTwo.gif)
+![ToDo App](AnimationTwo.gif  width="500" height="500")
 
 
-![task finished](Finished.gif)
+![task finished](Finished.gif  width="500" height="500")
