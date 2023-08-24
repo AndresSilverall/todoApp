@@ -1,6 +1,6 @@
 # ToDo App List
 
-ToDo App List es una aplicación web para programar tareas. Permite la eliminación y actualización de dichas tareas, así como la fecha de creación.
+ToDo App List es una aplicación web para programar tareas, permite listar, eliminar y actualizar dichas tareas.
 
 
 ## Tecnologías usadas
