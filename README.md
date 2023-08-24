@@ -2,20 +2,15 @@
 
 ToDo App List es una aplicación web para programar tareas, permite listar, eliminar y actualizar dichas tareas.
 
-
 ## Tecnologías usadas
 
  ● Python versión 3.8.5
-
-
+ 
  ● Framework Django versión 4.2.4
-
-
+ 
  ● CSS y Bootstrap
 
-
  ● SQLite
-
 
  ## Configuraciones
 
@@ -29,19 +24,16 @@ ToDo App List es una aplicación web para programar tareas, permite listar, elim
    - En Windows: `venv\Scripts\activate`
    - En macOS y Linux: `source venv/bin/activate`
 5. Aplica las migraciones de la base de datos: `python manage.py migrate`
-
-
+   
 ## Uso
 1. Ejecuta el servidor de desarrollo: `python manage.py runserver`
 2. Abre tu navegador y ve a: `http://127.0.0.1:8000/`
-
-
+   
 ## funcionamiento
 
-![ToDo App](AnimationTwo.gif  width="500" height="500")
-<img src="Animation.gif" alt="App en ejecucion" width="500" height="500">
+<img src="Animation.gif" alt="App en ejecucion" width="700" height="500">
 
-<img src="Finished.gif" alt="Tarea finalizada" width="500" height="500">
+<img src="Finished.gif" alt="Tarea finalizada" width="700" height="500">
 
 
 ![task finished](Finished.gif  width="500" height="500")
